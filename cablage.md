@@ -8,12 +8,19 @@ L esp32 est capable de gérer une batterie, mais le composant qui le fait néces
 
 solutions :
 
-- Mettre un bp poussoir et appuyer dessus a chaque fois qu on met l interrupteur sur on
+1. Mettre un bp poussoir en plus de l'interrupteur et appuyer dessus a chaque fois qu on met l interrupteur sur on ( à cabler sur la borne RST)
 
-- mettre un autre composant pour la charge et la régulation de tension et alimenter l esp32 et le gps via la borne 3.3V
+
+
+
+
+
+
+2. mettre un autre composant pour la charge et la régulation de tension et alimenter l esp32 et le gps via la borne 3.3V
 (Dommage car on ne profite pas des composants de la carte et plus de câblage et soudure)
 
-- solution que j' ai utilisé :
+
+3. solution que j' ai utilisé :
   J alimente le tout avec une batterie lipo. La tension est bien pour le gps mais un peu élevée pour l esp32
   
   Interrupteur sur on:
@@ -30,3 +37,9 @@ solutions :
 
   Un interrupteur 3 positions est nécessaire dans ce cas pour faire on/off/charge. On peut se débrouille avec 2 interrupteurs sinon
 
+(Honnetement c'est galère, faites la solution 1 !)
+
+Le cablage et les pins à utiliser sont en commentaire dans le programme
+
+
+Bisous !!!!!
